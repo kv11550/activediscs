@@ -1,0 +1,9 @@
+node_modules/
+packages/
+driver/.net/activememDotnetClient/*/bin/*
+driver/.net/activememDotnetClient/*/obj/*
+driver/.net/ActivememClient/obj/*
+driver/.net/ActivememClient/bin/*
+driver/.net/ActivememClientTestingApp/obj/*
+driver/.net/ActivememClientTestingApp/bin/*
+server/dist/*
