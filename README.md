@@ -1,20 +1,24 @@
 ## ActiveDiscs v1.0.0
 
-ActiveDiscs is a Redis like open-source, in-memory data structure store.  ActiveDiscs is written by typescripts.  I can be easily compiled and used on Linux and Windows.
+ActiveDiscs is a Redis like open-source, in-memory data structure store.  ActiveDiscs is written by typescripts.  It can be easily compiled and used on Linux and Windows.
+
 ActiveDiscs has the a Admin Desktop written by react typescripts.
+
 ActiveDiscs has the Nodejs and C# client so far, might provide more client for other language in the future. 
 
 # Install and build the source code for ActiveDiscs:
 1. Download the source code:
 [ActiveDiscs source code](https://github.com/kv11550/activediscs)
-
 2.	under Server folder:
-npm install
-npm run build
-
+``` bash
+$ npm install
+$ npm run build
+```
 3.	Under Desktop folder:
-npm install
-npm run build
+``` bash
+$ npm install
+$ npm run build
+```
 
 # Download the latest ready-to-use package:
 1.	[Download the latest binary package](https://objectstorage.ca-toronto-1.oraclecloud.com/n/yzx9535dp9qz/b/bucket-20220417-1402/o/activediscs_release_v1.0.0.zip)
