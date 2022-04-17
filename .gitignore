@@ -7,3 +7,4 @@ driver/.net/ActivememClient/bin/*
 driver/.net/ActivememClientTestingApp/obj/*
 driver/.net/ActivememClientTestingApp/bin/*
 server/dist/*
+release/*
