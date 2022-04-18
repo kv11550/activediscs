@@ -2,12 +2,13 @@ import { getInternal, getCommandNum } from '../cache/action.service'
 import * as os from 'os';
 import internal from 'stream';
 import moment from 'moment';
+import { config } from '../config/config';
 
 export const validateUser = (body: any) => {
 
     var result = null;
 
-    const password: string = process.env.Pass || '';
+    const password: string = config.pass || '';
 
     if (body) {
         var username = body.username;

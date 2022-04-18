@@ -11,19 +11,20 @@ import * as bodyParser from "body-parser";
 import { WebSocketServer } from 'ws';
 import { cacheWssRouter } from "./cache/action.wss";
 import { ServerTask } from "./utils/server";
+import { config } from './config/config';
 
-dotenv.config();
+// dotenv.config();
 
 /**
  * App Variables
  */
-if (!process.env.PORT) {
+if (!config.port) {
     process.exit(1);
 }
 
-const port: number = parseInt(process.env.Port as string, 10);
+const port: number = config.port ? config.port : 10;
 
-const adminPort: number = parseInt(process.env.AdminPort as string, 10);
+const adminPort: number =  config.adminPort ? config.adminPort : 10;
 
 const app = express();
 
