@@ -6,10 +6,17 @@ ActiveDiscs has the a Admin Desktop written by react typescripts.
 
 ActiveDiscs has the Nodejs and C# client so far, might provide more client for other language in the future. 
 
+# Desktop Preview
+[Demo](http://132.145.111.218:7000/)
+``` bash
+user: demo 
+pass: 1234abcd
+```
+
 # Install and build the source code for ActiveDiscs:
 1. Download the source code:
 [ActiveDiscs source code](https://github.com/kv11550/activediscs)
-2.	under Server folder:
+2.	Under Server folder:
 ``` bash
 $ npm install
 $ npm run build
