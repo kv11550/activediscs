@@ -12,6 +12,7 @@ import { WebSocketServer } from 'ws';
 import { cacheWssRouter } from "./cache/action.wss";
 import { ServerTask } from "./utils/server";
 import { config } from './config/config';
+import * as http from "http";
 
 // dotenv.config();
 
@@ -42,8 +43,6 @@ app.use(express.static('public'));
 
 app.use("/api/cache", cacheRouter);
 app.use("/api/user", userRouter);
-
-
 
 app.use(errorHandler);
 app.use(notFoundHandler);
@@ -127,11 +126,25 @@ serverTask.queryServerInfo();
  * Server Activation
  */
 
+/*
+http.createServer(app).listen(adminPort, '192.168.56.1', () => {
+    console.log(`admin site port: ${adminPort}`);
+    console.log(`active space port: ${port}`);
+});
+*/
 
+http.createServer(app).listen(adminPort, () => {
+    console.log(`admin site port: ${adminPort}`);
+    console.log(`active space port: ${port}`);
+});
 
+/*
  app.listen(adminPort, () => {
     console.log(`admin site port: ${adminPort}`);
     console.log(`active space port: ${port}`);
 });
+
+*/
+
 
 

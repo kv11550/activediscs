@@ -7,7 +7,7 @@ ActiveDiscs has the a Admin Desktop written by react typescripts.
 ActiveDiscs has the Nodejs and C# client so far, might provide more client for other language in the future. 
 
 # Desktop Preview
-[Demo](http://132.145.111.218:7000/)
+[Demo](http://www.ac.workflowexp.com/:7000/)
 ``` bash
 user: demo 
 pass: 1234abcd

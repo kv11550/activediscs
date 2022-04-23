@@ -6,7 +6,7 @@ const app = express()
 const port = 3000
 
 
-app.use(express.static('build'));
+app.use(express.static(''));
 
 app.get('/test', (req, res) => {
   res.send('Hello World!')
